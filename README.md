@@ -2,4 +2,4 @@
 Самончев Константин ЭФБО-03-24
 ## Ссылки
 
-- [Публичная страница на GitHub Pages](https://Larembra.github.io/Prakt_1/)
+- [Публичная страница на GitHub Pages](https://Larembra.github.io/prakt_3/)
