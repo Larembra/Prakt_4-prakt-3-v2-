@@ -1,13 +1,13 @@
-const dlg = document.getElementById('contactDialog');
-const openBtn = document.getElementById('openDialog');
-const closeBtn = document.getElementById('closeDialog');
-const form = document.getElementById('contactForm');
-const phone = document.getElementById('phone');
+const dlg = document.querySelector('.contact-dialog');
+const openBtn = document.querySelector('.open-dialog');
+const closeBtn = document.querySelector('.close-dialog');
+const form = document.querySelector('.contact-form');
+const phone = document.querySelector('.phone-input');
+
 let lastActive = null;
 openBtn.addEventListener('click', () => {
     lastActive = document.activeElement;
-    dlg.showModal(); // модальный режим +
-    затемнение
+    dlg.showModal(); // модальный режим + затемнение
     dlg.querySelector('input,select,textarea,button')?.focus();
 });
 closeBtn.addEventListener('click', () => dlg.close('cancel'));
@@ -33,7 +33,7 @@ form?.addEventListener('submit', (e) => {
     // 3) Успешная «отправка» (без сервера)
     e.preventDefault();
     // Если форма внутри <dialog>, закрываем окно:
-    document.getElementById('contactDialog')?.close('success');
+    document.querySelector('.contactDialog')?.close('success');
     form.reset();
 });
 phone?.addEventListener('input', () => {
